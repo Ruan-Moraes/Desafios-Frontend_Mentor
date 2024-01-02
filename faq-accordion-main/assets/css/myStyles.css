@@ -1,0 +1,13 @@
+body {
+  height: 150vh;
+  background:
+    linear-gradient(to bottom, transparent 40.5%, #f9eeff 39.5%),
+    url("../images/background-pattern-mobile.svg") center center/cover no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(to bottom, transparent 44.85%, #f9eeff 45.15%),
+      url("../images/background-pattern-desktop.svg");
+  }
+}
