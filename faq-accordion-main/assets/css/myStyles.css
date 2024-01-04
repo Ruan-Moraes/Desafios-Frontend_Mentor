@@ -7,7 +7,7 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    background: linear-gradient(to bottom, transparent 44.85%, #f9eeff 45.15%),
+    background: linear-gradient(to bottom, transparent 45.85%, #f9eeff 45.15%),
       url("../images/background-pattern-desktop.svg");
   }
 }

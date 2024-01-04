@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (min-width: 64rem) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 64rem) {
+  .container {
+    flex-direction: row;
+    gap: 0;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.2);
+  }
+}
+.container .header {
+  padding: 1.25rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (min-width: 64rem) {
+  .container .header {
+    padding: 2rem 1rem;
+    width: 50%;
+    border-top-right-radius: 2rem;
+  }
+}
+.container .header__punctuation h1 {
+  font-size: 1.25rem;
+  text-shadow: 0.0625rem 0.0625rem 0.5rem rgba(0, 0, 0, 0.2);
+  color: hsl(241, 100%, 89%);
+}
+@media screen and (min-width: 64rem) {
+  .container .header__punctuation h1 {
+    font-size: 1.5rem;
+  }
+}
+.container .header__punctuation div {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.25rem auto;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, hsl(256, 72%, 46%) 12.5%, hsla(241, 72%, 46%, 0));
+}
+@media screen and (min-width: 64rem) {
+  .container .header__punctuation div {
+    width: 10rem;
+    height: 10rem;
+    margin: 2.5rem auto;
+  }
+}
+.container .header__punctuation div span {
+  font-weight: 700;
+  text-shadow: 0.0625rem 0.0625rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.container .header__punctuation div span:nth-child(1) {
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (min-width: 64rem) {
+  .container .header__punctuation div span:nth-child(1) {
+    font-size: 4rem;
+  }
+}
+.container .header__punctuation div span:nth-child(2) {
+  font-size: 1rem;
+  color: hsla(241, 100%, 89%, 0.7);
+}
+.container .header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 64rem) {
+  .container .header__content h2 {
+    font-size: 2rem;
+  }
+}
+.container .header__content p {
+  width: 75%;
+  color: hsl(241, 100%, 89%);
+}
+@media screen and (min-width: 64rem) {
+  .container .header__content p {
+    width: 60%;
+  }
+}
+.container .body {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (min-width: 64rem) {
+  .container .body {
+    width: 50%;
+    padding: 2rem;
+  }
+}
+.container .body__title {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+@media screen and (min-width: 64rem) {
+  .container .body__title {
+    font-size: 1.5rem;
+  }
+}
+.container .body__results {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.container .body__results--reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.container .body__results--memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.container .body__results--verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.container .body__results--visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+.container .body__results img {
+  width: 1.5rem;
+}
+.container .body__results p {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.container .body__results p span {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+.container .body__results p span span {
+  color: hsl(241, 100%, 89%);
+}
+.container .body__button {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 2rem;
+  transition: 0.2s;
+}
+.container .body__button:hover {
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%) 12.5%, hsla(241, 72%, 46%, 0.8));
+}
+.container .body__button a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=styles.css.map */
