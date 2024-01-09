@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(234, 29%, 20%);
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main__image img {
+    width: 100%;
+}
+
+.main__image img:nth-child(2) {
+    display: none;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+.main__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main__header h1 {
+    font-size: 2.25rem;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__content p {
+    display: flex;
+    gap: 1rem;
+}
+
+.main__content i {
+    font-size: 1.25rem;
+    color: hsl(4, 100%, 67%);
+}
+
+.main__form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__form form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__form form input[type='email'],
+.main__form form input[type='submit'] {
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.main__form form input[type='email'] {
+    border: 1px solid hsl(231, 7%, 60%);
+    font-weight: 700;
+}
+
+.main__form form .error {
+    background-color: hsl(4, 100%, 90%);
+    border: 1px solid hsl(4, 100%, 67%) !important;
+    outline: 1px solid hsl(4, 100%, 67%) !important;
+    color: hsl(4, 100%, 67%);
+}
+
+.main__form form .error::placeholder {
+    color: hsl(4, 100%, 60%);
+}
+
+.main__form form input[type='submit'] {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+}
+
+.main__form form input[type='submit']:hover {
+    background-image: linear-gradient(
+        to right,
+        hsl(4, 100%, 67%),
+        hsl(20, 100%, 67%)
+    );
+}
+
+.main__form form div #emailError {
+    font-weight: 700;
+    color: hsl(4, 100%, 67%);
+}
+
+@media screen and (min-width: 48rem) {
+    .html1 body {
+        background-color: hsl(235, 18%, 26%);
+    }
+
+    .html1 .main {
+        width: 40rem;
+        margin: 0 auto;
+        background-color: hsl(0, 0%, 100%);
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border: 2px solid hsl(234, 29%, 20%);
+        border-top: none;
+    }
+
+    .html1 .main__image img {
+        border-bottom: 2px solid hsl(234, 29%, 20%);
+        border-bottom-left-radius: 1.85rem;
+        border-bottom-right-radius: 1.85rem;
+    }
+
+    .html1 .main__container {
+        padding: 0 2rem 2rem 2rem;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .html1 body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .html1 .main {
+        width: 54rem;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 0;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .html1 .main__image img {
+        border: none;
+        border-radius: 1rem;
+    }
+
+    .html1 .main__image img:nth-child(1) {
+        display: none;
+    }
+
+    .html1 .main__image img:nth-child(2) {
+        display: block;
+    }
+
+    .html1 .main__container {
+        padding: 4rem 3rem;
+    }
+
+    .html1 .main__header h1 {
+        font-size: 3rem;
+    }
+}
+
+/* signupSucess */
+
+.html2 body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.html2 .main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.html2 .main__content {
+    gap: 1.5rem;
+}
+
+.html2 .main__check i {
+    font-size: 3rem;
+    color: hsl(4, 100%, 67%);
+}
+
+.html2 .main__success {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.html2 .main__success h1 {
+    font-size: 2.25rem;
+}
+
+.html2 .main__success p {
+    display: block;
+    line-height: 1.4rem;
+}
+
+.html2 .main__success span {
+    font-weight: 700;
+}
+
+.html2 .main__dismiss {
+    display: flex;
+    text-align: center;
+}
+
+.html2 .main__dismiss a {
+    width: 100%;
+    padding: 1rem;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 0.5rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.html2 .main__dismiss a:hover {
+    background-image: linear-gradient(
+        to right,
+        hsl(4, 100%, 67%),
+        hsl(20, 100%, 67%)
+    );
+}
+
+@media screen and (min-width: 48rem) {
+    .html2 body {
+        background-color: hsl(235, 18%, 26%);
+    }
+
+    .html2 .main {
+        padding: 3rem;
+        width: 28rem;
+        height: max-content;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0.5rem;
+    }
+
+    .html2 .main__success h1 {
+        font-size: 2.5rem;
+    }
+}
