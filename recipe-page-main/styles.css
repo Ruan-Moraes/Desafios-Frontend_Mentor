@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.0625rem;
+}
+
+body {
+  background-color: var(--eggshell);
+}
+
+.main {
+  padding-bottom: 2rem;
+  background-color: var(--white);
+}
+
+.main__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__container {
+  padding: 0 2rem;
+}
+
+.main__title {
+  margin: 1rem 0;
+  font-family: 'Young Serif', serif;
+  color: var(--dark-charcoal);
+}
+
+.main__description {
+  color: var(--wenge-brown);
+  margin-bottom: 2rem;
+}
+
+.main__timer {
+  background-color: var(--rose-white);
+  list-style-position: inside;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.main__timer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main__timer ul::before {
+  content: attr(aria-label);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-raspberry);
+}
+
+.main__timer ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.main__timer ul li::before {
+  font-size: 2rem;
+  content: '•';
+  color: var(--dark-raspberry);
+}
+
+.main__timer ul li span {
+  font-weight: 700;
+  color: var(--wenge-brown);
+}
+
+.main__engredients {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.main__title--secondary {
+  margin-bottom: 1rem;
+  color: var(--nutmeg);
+}
+
+.main__items {
+  list-style-position: inside;
+}
+
+.main__items ul {
+  padding: 0 0.5rem;
+}
+
+.main__items ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--wenge-brown);
+}
+
+.main__items ul li::before {
+  font-size: 2rem;
+  content: '•';
+  color: var(--dark-raspberry);
+}
+
+.main__instructions {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.main__instructionsItems ol {
+  padding: 0 0.5rem;
+  list-style-position: inside;
+  counter-reset: step;
+}
+
+.main__instructionsItems ol li {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.85rem;
+}
+
+.main__instructionsItems ol li::before {
+  content: counter(step) '.';
+  color: var(--dark-raspberry);
+  counter-increment: step;
+  font-weight: 700;
+}
+
+.main__instructionsItems ol li span {
+  font-weight: 700;
+  color: var(--dark-charcoal);
+}
+
+.main__nutrition .main__title--secondary {
+  margin: 2rem 0 1rem 0;
+  color: var(--nutmeg);
+}
+
+.main__nutritionalInformations {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main__nutritionalInformations > div {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--light-grey);
+  display: flex;
+}
+
+.main__nutritionalInformations > div > div:nth-child(1) {
+  padding-left: 1rem;
+  flex: 1;
+}
+
+.main__nutritionalInformations > div > div:nth-child(2) {
+  flex: 1;
+  font-weight: 700;
+  color: var(--nutmeg);
+}
+
+@media screen and (min-width: 40rem) {
+  .main {
+    margin: 4rem auto;
+    padding: 2rem;
+    max-width: 50vw;
+    border-radius: 1rem;
+  }
+
+  .main__image img {
+    border-radius: 0.5rem;
+  }
+
+  .main__container {
+    padding: 0;
+  }
+}
