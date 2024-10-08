@@ -1,9 +1,9 @@
 import { Component } from 'react';
 
-export class CallToAction extends Component {
+export default class CallToActionTop extends Component {
   render() {
     return (
-      <div className="flex flex-col items-center mt-24 gap-7">
+      <section className="flex flex-col items-center mt-24 gap-7">
         <div>
           <h1 className="text-2xl font-bold text-center text-cyan">
             Build The Community Your Fans Will Love
@@ -24,9 +24,7 @@ export class CallToAction extends Component {
             Get Started For Free
           </a>
         </div>
-      </div>
+      </section>
     );
   }
 }
-
-export default CallToAction;

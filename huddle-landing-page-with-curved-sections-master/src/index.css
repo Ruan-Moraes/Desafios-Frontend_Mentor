@@ -6,12 +6,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-header,
-main,
-footer {
-  padding: 0 1.25rem;
-}
-
 header * {
   font-family: 'Poppins', sans-serif;
 }
@@ -27,4 +21,8 @@ main {
   justify-content: center;
   gap: 12rem;
   min-height: 100vh;
+}
+
+section {
+  margin: 0 1.25rem;
 }

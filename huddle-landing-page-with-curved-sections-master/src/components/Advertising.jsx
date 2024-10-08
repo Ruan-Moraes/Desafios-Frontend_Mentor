@@ -14,10 +14,10 @@ const background = {
   backgroundSize: 'cover',
 };
 
-export class Advertising extends Component {
+export default class Advertising extends Component {
   render() {
     return (
-      <div
+      <section
         style={background}
         className="flex flex-col items-center justify-center gap-20"
       >
@@ -26,9 +26,7 @@ export class Advertising extends Component {
         </div>
         <AdvertisingData icon={iconCommunities} />
         <AdvertisingData icon={iconMessages} />
-      </div>
+      </section>
     );
   }
 }
-
-export default Advertising;

@@ -1,10 +1,14 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
-export class Main extends Component {
+export default class Main extends Component {
   render() {
-    // eslint-disable-next-line react/prop-types
-    return <main>{this.props.children}</main>;
+    const { children } = this.props;
+
+    return <main className="relative z-10 pb-52">{children}</main>;
   }
 }
 
-export default Main;
+Main.propTypes = {
+  children: PropTypes.node.isRequired,
+};
