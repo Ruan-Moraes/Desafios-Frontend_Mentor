@@ -9,10 +9,12 @@ export default class Footer extends Component {
 
     return (
       <footer className="bg-darkCyan">
-        <div className="bg-paleBlue">
+        <div className="bg-white">
           <img src={bgFooterTopMobile} alt="" className="w-full" />
         </div>
-        {children}
+        <div className="xl:flex xl:flex-row-reverse xl:justify-center xl:gap-48">
+          {children}
+        </div>
       </footer>
     );
   }

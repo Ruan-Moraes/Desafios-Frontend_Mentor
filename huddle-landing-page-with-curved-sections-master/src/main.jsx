@@ -16,7 +16,7 @@ import Informations from './components/Informations';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Header />\
+    <Header />
     <Main>
       <CallToActionTop />
       <Advertising />

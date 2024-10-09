@@ -3,7 +3,7 @@ import { Component } from 'react';
 export default class Newsletter extends Component {
   render() {
     return (
-      <section className="flex flex-col mt-20 gap-7">
+      <section className="flex flex-col mt-20 gap-7 xl:w-[32rem]">
         <div>
           <h2 className="text-2xl font-bold uppercase text-paleBlue">
             Newsletter
@@ -16,7 +16,7 @@ export default class Newsletter extends Component {
           </p>
         </div>
         <div>
-          <form className="flex flex-col items-end gap-4">
+          <form className="flex flex-col items-end gap-4 xl:flex-row">
             <input
               type="email"
               placeholder="Enter your email"
@@ -24,7 +24,7 @@ export default class Newsletter extends Component {
             />
             <button
               type="submit"
-              className="py-3 font-bold rounded-md px-14 bg-pink text-paleBlue"
+              className="py-3 font-bold transition-colors duration-300 rounded-md px-14 bg-pink text-paleBlue hover:bg-pink-light"
             >
               Subscribe
             </button>

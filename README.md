@@ -8,6 +8,6 @@ Este repositório contém os projetos que eu fiz do site [Front-End Mentor](http
 
 ## Página de Projetos
 
-Criei uma página para listar todos os projetos que fiz do Front-End Mentor. A página é feita com HTML, CSS.
+Criei uma página para listar todos os projetos que fiz do Front-End Mentor.
 
 Você pode acessar a página [clicando aqui](https://ruan-moraes.github.io/Frontend-Mentor_Challenges/).

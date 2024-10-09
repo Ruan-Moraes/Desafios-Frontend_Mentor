@@ -5,12 +5,17 @@ export default class CallToActionTop extends Component {
     return (
       <section className="flex flex-col items-center gap-10">
         <div>
-          <h2 className="text-2xl font-bold text-center">
+          <h2 className="text-2xl font-bold text-center xl:text-4xl">
             Ready To Build Your Community?
           </h2>
         </div>
-        <div className="px-12 py-3 font-bold text-center rounded-full bg-pink text-paleBlue">
-          <a href="#">Get Started For Free</a>
+        <div>
+          <a
+            href="#"
+            className="px-10 py-3 font-bold text-center transition-colors duration-300 rounded-full bg-pink hover:bg-pink-light text-paleBlue xl:px-20 xl:py-4"
+          >
+            Get Started For Free
+          </a>
         </div>
       </section>
     );
