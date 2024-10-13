@@ -10,7 +10,7 @@ export default class CallToActionTop extends Component {
           </h1>
         </div>
         <div>
-          <p className="p-2 mx-auto text-sm text-center xl:w-2/4">
+          <p className="p-3 mx-auto text-sm text-center xl:w-2/4">
             Huddle re-imagines the way we build communities. You have a voice,
             but so does your audience. Create connections with your users as you
             engage in genuine discussion.
